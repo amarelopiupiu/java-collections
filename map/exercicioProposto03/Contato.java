@@ -1,3 +1,5 @@
+package exercicioProposto03;
+
 import java.util.Objects;
 
 public class Contato {
