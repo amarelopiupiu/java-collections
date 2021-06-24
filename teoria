@@ -1,0 +1,45 @@
+o que é uma collection?
+é um objeto que agrupa diversos elementos (variáveis primitivas ou objetos) dentro de uma única unidade, serve para
+armazenar e processar conjuntos de dados de forma eficiente.
+
+qual é a composição de uma collection?
+- interfaces: é um contrato que quando assumido por uma classe deve ser implementado
+- implementações ou classes: são as materializações, a codificação das interfaces
+- algoritmos: é uma sequência lógica, finita e definida de instruções que devem ser seguidas para resolver um problema
+
+java.util.List
+- apresentam elementos duplicados
+- os elementos vão aparecer na ordem que forem colocados
+
+java.util.Set
+- não possui elementos duplicados e não possui índice
+- HashSet: utiliza o HashMap para armazenar elementos, não mantém a ordem dos elementos, tem uma performance melhor, permite 1 elemento null
+
+- LinkedHashSet: utiliza o LinkedHashMap para armazenar elementos. mantém a ordem de inserção dos elementos, tem performance mediana, permite 1 elemento null
+- TreeSet: utiliza o TreeMap para armazenar elementos, ele mantém a ordem natural dos elementos, tem a menor performance, não permite nenhum elemento null
+
+java.util.Map
+- elementos (key) para cada valor (value)
+- HashTable: é thread-safe, porém ele é mais antigo
+- TreeMap: ele é muito usado em comparação, sem uma perfomance pior que o HashMap, itera os elementos de acordo com a ordem natural das chaves, não permite chaves nulas, implementa a interface Map, NavigableMap e SortedMap, não é sincronizável (mas pode usar Collections.synchronizedMap();), utiliza Red-Black Tree
+- HashMap: apresenta a mesma performane que o LinkedHashMap, itera os elementos aleatoriamente, permite chaves nulas, implementa a interface Map, não é sincronizável (mas pode usar Collections.synchronizedMap();), utiliza List of Buckets
+- LinkedHashMap: estende do HashMap, itera os elementos de acordo com a ordem de inserção, permite chaves nulas, implementa a interface Map, não é sincronizável (mas pode usar Collections.synchronizedMap();), utiliza Doubly Linked List of Buckets
+
+Method Reference
+- permite fazer referência a um método ou construtor de uma classe, e indicar que ele deve ser utilizado em um ponto do código, deixando mais simples e legível, para utilizado basta informar uma classe ou referência seguida do símbolo :: e o nome do método sem o parênteses no final
+
+Lambda
+- é uma função sem declaração, não é necessário colocar um nome, um tipo de retorno e o modificador de acesso
+- a ideia é que o método seja declarado no mesmo lugar em que será utilizado
+- tem sintaxe definida como (argumento) -> (corpo)
+
+Streams API
+- é uma nova opção para manipulação de coleções em Java seguindo os princípios da programação funcional
+
+Classe anônima
+- é a classe que não recebeu nome e é tanto declarado e instanciado em uma única instrução
+- elas são usadas quando serão instanciadas apenas uma vez
+
+Functional Interface
+- é qualquer interface com uma SAM (Single Abstract Method)
+- sua implementação pode ser tratada como expressões lambda
