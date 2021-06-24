@@ -1,5 +1,4 @@
 # Collections em Java
-Collections Framework é um conjunto de interfaces e classes para representar e tratar grupos de dados como uma única unidade, que pode ser chamada coleção, ou collection. 
 Caso você clonou o repositório dentro de uma pasta, exclua o arquivo criado com o nome da sua pasta (extensão .iml) e se estiver usando o IntelliJ irá aparecer uma opção para baixar o SDK, baixe a versão recomendada. 
 
 ## Sobre a Autora
